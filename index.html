@@ -3,10 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>Find Them All</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    img {
+      max-width: 100%;
+      margin-top: 30px;
+      display: none;
+    }
+  </style>
 </head>
-<body style="font-family:Arial; text-align:center; padding:40px;">
+
+<body>
+
   <h1>🔍 FIND THEM ALL!</h1>
   <h2>Cristina • Logan • Cami</h2>
   <p>No app. Just click & play 😄</p>
+
+  <button onclick="startGame()">Start Game</button>
+
+  <img id="level1" src="level1.jpg" alt="Level 1">
+
+  <script>
+    function startGame() {
+      document.getElementById('level1').style.display = 'block';
+    }
+  </script>
+
 </body>
 </html>
